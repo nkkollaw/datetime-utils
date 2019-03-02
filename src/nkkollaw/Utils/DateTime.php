@@ -25,8 +25,8 @@ class DateTime {
         //---->The two can be equal in leap years when february has 29 days, the equal sign is added here
         //In the first case the whole interval is within a week, in the second case the interval falls in two weeks.
         if ($the_first_day_of_week <= $the_last_day_of_week) {
-        if ($the_first_day_of_week <= 6 && 6 <= $the_last_day_of_week) $no_remaining_days--;
-        if ($the_first_day_of_week <= 7 && 7 <= $the_last_day_of_week) $no_remaining_days--;
+            if ($the_first_day_of_week <= 6 && 6 <= $the_last_day_of_week) $no_remaining_days--;
+            if ($the_first_day_of_week <= 7 && 7 <= $the_last_day_of_week) $no_remaining_days--;
         } else {
             // (edit by Tokes to fix an edge case where the start day was a Sunday
             // and the end day was NOT a Saturday)
