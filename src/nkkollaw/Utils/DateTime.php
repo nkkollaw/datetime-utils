@@ -4,7 +4,7 @@ namespace nkkollaw\Utils;
 class DateTime {
     // The function returns the no. of business days between two dates and it skips the holidays
     // see: https://stackoverflow.com/a/336175/2178206
-    function getWorkingDays($startDate, $endDate, $holidays=[])
+    public static function getWorkingDays($startDate, $endDate, $holidays=[])
     {
         // do strtotime calculations just once
         $endDate = strtotime($endDate);
@@ -66,7 +66,7 @@ class DateTime {
         return $workingDays;
     }
 
-    function getTimezoneOffset($remote_tz, $origin_tz='')
+    public static function getTimezoneOffset($remote_tz, $origin_tz='')
     {
         if (!$origin_tz) {
             if (!is_string($origin_tz = date_default_timezone_get())) {
