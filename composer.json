@@ -3,7 +3,7 @@
 {
   "name": "nkkollaw/datetime-utils",
   "description": "Utils for dates + time",
-	"version": "0.2.1",
+	"version": "0.1.1",
     "license": "MIT",
     "authors": [
         {
