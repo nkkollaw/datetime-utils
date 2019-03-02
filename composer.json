@@ -1,9 +1,9 @@
 
-  
+
 {
   "name": "nkkollaw/datetime-utils",
   "description": "Utils for dates + time",
-	"version": "0.0.1",
+	"version": "0.1",
     "license": "MIT",
     "authors": [
         {
